@@ -1,0 +1,13 @@
+/* about.component.css */
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .card {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }

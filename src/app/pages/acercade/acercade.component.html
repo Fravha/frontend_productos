@@ -1,0 +1,42 @@
+<!-- about.component.html -->
+<div class="container mt-5">
+<div class="row">           
+      <div class="col-12 text-center mb-4">
+        <h1 class="display-4">Acerca de Nosotros</h1>
+        <p class="lead">Conoce al equipo detrás de nuestro proyecto</p>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Nuestra Historia</h5>
+            <p class="card-text">
+              Somos un equipo apasionado comprometido con crear soluciones tecnológicas 
+              innovadoras que mejoren la vida de las personas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center mb-4">Desarrollo</h2>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4" *ngFor="let member of teamMembers">
+        <div class="card mb-4 shadow-sm">
+          <img [src]="member.image" class="card-img-top" [alt]="member.name">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ member.name }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ member.role }}</h6>
+            <p class="card-text">{{ member.bio }}</p>
+            <h6 class="card-subtitle mb-2 text-muted">{{ member.linkedin }}</h6>
+            <h6 class="card-subtitle mb-2 text-muted">{{ member.github }}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

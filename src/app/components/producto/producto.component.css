@@ -1,0 +1,41 @@
+/* Estilos personalizados para la gestión de productos */
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-group-text {
+  background-color: #f8f9fa;
+}
+
+/* Método 3: Separación de encabezado */
+.table-header-fixed {
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.table-header-fixed thead {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Animaciones sutiles */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+tr {
+  animation: fadeIn 0.5s ease;
+}
+
+.btn-group .btn {
+  transition: all 0.3s ease;
+}
+
+.btn-group .btn:hover {
+  transform: scale(1.05);
+}
