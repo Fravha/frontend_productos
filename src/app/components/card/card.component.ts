@@ -26,7 +26,7 @@ export class CardComponent {
       name: 'Smartphone Pro X',
       description: 'Teléfono inteligente de última generación con cámara de 108MP',
       price: 599.99,
-      imageUrl: 'assets/smartphone.jpg',
+      imageUrl: 'images/img1.jpg',
       category: 'Electrónica',
       discount: 10
     },
@@ -35,7 +35,7 @@ export class CardComponent {
       name: 'Laptop WorkStation',
       description: 'Portátil de alto rendimiento para profesionales',
       price: 1299.99,
-      imageUrl: 'assets/laptop.jpg',
+      imageUrl: 'images/img2.jpg',
       category: 'Computadoras'
     },
     {
@@ -43,7 +43,7 @@ export class CardComponent {
       name: 'Auriculares Inalámbricos',
       description: 'Sonido de alta fidelidad con cancelación de ruido',
       price: 199.99,
-      imageUrl: 'assets/headphones.jpg',
+      imageUrl: 'images/img3.jpg',
       category: 'Accesorios'
     },
     {
@@ -51,7 +51,43 @@ export class CardComponent {
       name: 'Smartwatch Fitness',
       description: 'Seguimiento de salud y actividad física',
       price: 149.99,
-      imageUrl: 'assets/smartwatch.jpg',
+      imageUrl: 'images/image_4.jpg',
+      category: 'Electrónica',
+      discount: 15
+    },
+    {
+      id: 5,
+      name: 'Smartwatch Fitness',
+      description: 'Seguimiento de salud y actividad física',
+      price: 149.99,
+      imageUrl: 'images/image_4.jpg',
+      category: 'Electrónica',
+      discount: 15
+    },
+    {
+      id: 6,
+      name: 'Smartwatch Fitness',
+      description: 'Seguimiento de salud y actividad física',
+      price: 149.99,
+      imageUrl: 'images/image_4.jpg',
+      category: 'Electrónica',
+      discount: 15
+    },
+    {
+      id: 7,
+      name: 'Smartwatch Fitness',
+      description: 'Seguimiento de salud y actividad física',
+      price: 149.99,
+      imageUrl: 'images/image_4.jpg',
+      category: 'Electrónica',
+      discount: 15
+    },
+    {
+      id: 8,
+      name: 'Smartwatch Fitness',
+      description: 'Seguimiento de salud y actividad física',
+      price: 149.99,
+      imageUrl: 'images/image_4.jpg',
       category: 'Electrónica',
       discount: 15
     }

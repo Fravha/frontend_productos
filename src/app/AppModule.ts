@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 
+
 import { AppComponent } from './app.component';
 
 
@@ -17,6 +18,9 @@ import { ProductoService } from './services/producto.service';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { CardComponent } from './components/card/card.component';
+import { CatalogoComponent } from './pages/catalogo/catalogo.component';
+import { GraficosComponent } from './pages/graficos/graficos.component';
+
 
 @NgModule({
   declarations: [
@@ -26,13 +30,15 @@ import { CardComponent } from './components/card/card.component';
     NavbarComponent,
     CardComponent,
     InicioComponent,
-    AcercadeComponent
+    AcercadeComponent,
+    CatalogoComponent,
+    GraficosComponent
   ],
   imports: [
     BrowserModule, // Necesario para una aplicación web en Angular
     FormsModule, // Para el uso de formularios en Angular
     HttpClientModule, // Para realizar peticiones HTTP
-    AppRoutingModule // Para la configuración de las rutas
+    AppRoutingModule, // Para la configuración de las rutas
   ],
   providers: [ProductoService], // El servicio ProductoService estará disponible en toda la aplicación
   bootstrap: [AppComponent] // Componente raíz

@@ -8,6 +8,7 @@ interface Producto {
   producto_id?: number;
   nombre: string;
   precio: number;
+  categoria_id: number;
   // Agrega más propiedades según tu modelo de datos
 }
 
@@ -17,8 +18,21 @@ interface Producto {
 })
 export class ProductoService {
   private apiUrl = 'http://localhost:3000/api/productos';
+  private apiUrl1 = 'http://localhost:3000/api';
 
   constructor(private http: HttpClient) { }
+
+  getCategories(): Observable<any> {
+    return this.http.get(`${this.apiUrl1}/categories`);
+  }
+
+  // Obtener productos, opcionalmente filtrados por categoría
+  getProducts(categoryId?: number): Observable<any> {
+    const url = categoryId 
+      ? `${this.apiUrl}/productos?category=${categoryId}` // Filtrado por categoría
+      : `${this.apiUrl}/productos`; // Todos los productos
+    return this.http.get(url);
+  }
 
   getProductos(): Observable<any> {
     return this.http.get(this.apiUrl); 
