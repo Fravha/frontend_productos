@@ -15,7 +15,8 @@ Chart.register(...registerables);
     .chart-container {
       width: 100%;
       max-width: 800px;
-      margin: 0 auto;
+      height: 400px;
+      margin: 150px auto;
     }
   `],
   standalone:false

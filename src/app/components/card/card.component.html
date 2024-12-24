@@ -43,10 +43,10 @@
               <span 
                 *ngIf="product.discount" 
                 class="text-muted text-decoration-line-through me-2">
-                ${{ product.price.toFixed(2) }}
+                Bs{{ product.price.toFixed(2) }}
               </span>
               <strong class="text-primary">
-                ${{ calculateDiscountedPrice(product).toFixed(2) }}
+                Bs{{ calculateDiscountedPrice(product).toFixed(2) }}
               </strong>
             </div>
             <button 

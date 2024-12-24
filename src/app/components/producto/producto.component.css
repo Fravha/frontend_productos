@@ -1,41 +1,46 @@
-/* Estilos personalizados para la gestión de productos */
-.form-control:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+/* Personalización del encabezado */
+.card-header {
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
 }
 
-.input-group-text {
-  background-color: #f8f9fa;
+.bg-primary {
+  background-color: #2766a5 !important;
 }
 
-/* Método 3: Separación de encabezado */
-.table-header-fixed {
+.bg-secondary {
+  background-color: #2766a5 !important;
+}
+
+.table-responsive {
+  max-height: 500px;
   overflow-y: auto;
-  max-height: 400px;
 }
 
-.table-header-fixed thead {
-  position: sticky;
-  top: 0;
-  background: white;
-  z-index: 10;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+.text-danger {
+  font-size: 0.9em;
+  font-weight: 600;
 }
 
-/* Animaciones sutiles */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+input, textarea {
+  border-radius: 0.25rem !important;
 }
 
-tr {
-  animation: fadeIn 0.5s ease;
+.btn {
+  border-radius: 0.3rem !important;
 }
 
-.btn-group .btn {
-  transition: all 0.3s ease;
+input:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(106, 154, 224, 0.5) !important;
 }
 
-.btn-group .btn:hover {
-  transform: scale(1.05);
+.table-dark th {
+  background-color: #2766a5 !important;
+  color: #fff !important;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
